@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive HTML Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f7f7f7;
+            color: #333; /* Improved text color for better contrast */
+        }
+        h1, h2 {
+            color: #000; /* Improved header text color for better contrast */
+            text-align: center;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            color: #000; /* Improved text color for better contrast */
+        }
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        /* Improved button text color for better contrast */
+        button:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HTML Demonstration</h1>
+
+        <!-- Menu -->
+        <div>
+            <h2>Menu</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Table -->
+        <div>
+            <h2>Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>City</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>30</td>
+                        <td>New York</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>25</td>
+                        <td>Los Angeles</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Chart -->
+        <div>
+            <h2>Chart</h2>
+            <canvas id="myChart" width="400" height="200"></canvas>
+        </div>
+
+        <!-- Form -->
+        <div>
+            <h2>Form</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Color and Font Options -->
+        <div>
+            <h2>Color and Font Options</h2>
+            <p style="color: #d32f2f; font-size: 18px;">This is a sample text with custom color and font size.</p>
+        </div>
+
+        <!-- Buttons -->
+        <div>
+            <h2>Buttons</h2>
+            <button onclick="alert('Button Clicked!')">Click Me</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Chart.js example
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May'],
+                datasets: [{
+                    label: 'Sales',
+                    data: [12, 19, 3, 5, 2],
+                    backgroundColor: 'rgba(211, 47, 47, 0.5)', /* Improved chart color */
+                    borderColor: 'rgba(211, 47, 47, 1)', /* Improved chart border color */
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

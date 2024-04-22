@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exploring HTML's Playground</title>
+  <style>
+    /* Base styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1, h2 {
+      margin: 10px 0;
+    }
+
+    /* Menus */
+    .menu {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu li {
+      margin-right: 10px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* Tables */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    /* Charts */
+    #chartContainer {
+      width: 500px;
+      height: 300px;
+    }
+
+    /* Input Options */
+    .input-group {
+      margin-bottom: 10px;
+    }
+
+    .input-label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    /* Colors & Fonts */
+    .color-picker {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .color-picker input[type="color"] {
+      width: 50px;
+      height: 20px;
+    }
+
+    .font-selector {
+      display: inline-block;
+    }
+
+    .font-selector select {
+      padding: 5px;
+    }
+
+    /* Buttons */
+    .button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the HTML Playground!</h1>
+
+  <h2>Navigation Menus</h2>
+  <ul class="menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)">Features</a>
+      <div class="dropdown-content">
+        <a href="#">Tables</a>
+        <a href="#">Charts</a>
+        <a href="#">Forms</a>
+      </div>
+    </li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+  <h2>Data Tables</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>City</th>
+    </tr>
+    <tr>
+      <td>John Doe</td>
+      <td>30</td>
+      <td>New York</td>
+    </tr>
+    <tr>
+      <td>Jane Smith</td>
+      <td>25</td>
+      <td>Los Angeles</td>
+    </tr>
+  </table>
+
+  <h2>Interactive Charts (using external library)</h2>
+  <div id="chartContainer"></div>
+  

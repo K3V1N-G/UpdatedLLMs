@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Demonstration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .menu {
+            background-color: #f1f1f1;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .menu a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .menu a:hover {
+            color: #007BFF;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .input-options {
+            margin-bottom: 10px;
+        }
+        .input-options label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-options input[type="color"],
+        .input-options input[type="font"] {
+            margin-right: 5px;
+        }
+        .buttons {
+            margin-top: 10px;
+        }
+        .buttons button {
+            margin-right: 5px;
+            padding: 5px 10px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+        .buttons button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="input-options">
+        <label for="color-picker">Choose a color:</label>
+        <input type="color" id="color-picker">
+        <label for="font-picker">Choose a font:</label>
+        <input type="font" id="font-picker">
+    </div>
+
+    <div class="buttons">
+        <button onclick="alert('Button clicked!')">Click Me</button>
+        <button onclick="alert('Another button clicked!')">Click Me Too</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>john@example.com</td>
+                <td>123-456-7890</td>
+            </tr>
+            <tr>
+                <td>Jane Doe</td>
+                <td>jane@example.com</td>
+                <td>098-765-4321</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        // Example JavaScript to dynamically change the background color
+        document.getElementById('color-picker').addEventListener('change', function(event) {
+            document.body.style.backgroundColor = event.target.value;
+        });
+
+        // Example JavaScript to dynamically change the font
+        document.getElementById('font-picker').addEventListener('change', function(event) {
+            document.body.style.fontFamily = event.target.value;
+        });
+    </script>
+</body>
+</html>
