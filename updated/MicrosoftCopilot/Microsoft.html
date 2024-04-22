@@ -46,21 +46,22 @@
     </style>
 </head>
 <body>
-    <div class="menu">
+    <nav class="menu">
         <h1>My Intricate HTML Page</h1>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#" aria-label="Home">Home</a></li>
+            <li><a href="#" aria-label="About">About</a></li>
+            <li><a href="#" aria-label="Services">Services</a></li>
+            <li><a href="#" aria-label="Contact">Contact</a></li>
         </ul>
-    </div>
+    </nav>
     <h2>Tables</h2>
     <table>
+        <caption>User Information Table</caption>
         <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Country</th>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Country</th>
         </tr>
         <tr>
             <td>John</td>
@@ -76,14 +77,8 @@
     <h2>Charts</h2>
     <div class="chart">
         <!-- Add your chart here (e.g., using Chart.js) -->
+        <!-- Provide an alt attribute for the chart image -->
+        <img src="chart-image.png" alt="Chart showing data trends">
     </div>
-    <h2>Input Options</h2>
-    <input type="text" placeholder="Enter your name">
-    <h2>Colors</h2>
-    <p style="color: #FF4136;">This is a red text.</p>
-    <h2>Font Options</h2>
-    <p style="font-size: 18px; font-weight: bold;">This is a bold text with larger font size.</p>
-    <h2>Buttons</h2>
-    <button>Click me</button>
 </body>
 </html>
