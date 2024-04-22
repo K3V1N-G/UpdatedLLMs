@@ -37,6 +37,22 @@
             padding: 8px;
             text-align: center;
         }
+        /* Added contrast for better readability */
+        body {
+            color: #333;
+        }
+        h1, h2, h3, h4, h5, h6, p, button {
+            color: #333;
+        }
+        /* Added contrast for better readability */
+        input[type="text"] {
+            border-color: #333;
+        }
+        /* Added contrast for better readability */
+        button {
+            background-color: #333;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
@@ -79,7 +95,7 @@
     <h2>Charts</h2>
     <div class="chart"></div>
     <h2>Inputs</h2>
-    <input type="text" placeholder="Enter your name">
+    <input type="text" placeholder="Enter your name" aria-label="Enter your name">
     <h2>Colors</h2>
     <p style="color: #FF4136;">This is a red text.</p>
     <h2>Font Options</h2>

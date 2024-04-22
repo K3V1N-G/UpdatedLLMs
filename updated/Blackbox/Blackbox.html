@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en"> <!-- Add lang attribute to html tag -->
 <head>
 	<title>HTML Example</title>
 	<style>
@@ -46,7 +46,7 @@
 			padding-top: 12px;
 			padding-bottom: 12px;
 			text-align: left;
-			background-color: #4CAF50;
+			background-color: #4CAF50; /* Insufficient color contrast */
 			color: white;
 		}
 		.chart {
@@ -61,7 +61,7 @@
 			box-sizing: border-box;
 		}
 		.button {
-			background-color: #4CAF50;
+			background-color: #4CAF50; /* Insufficient color contrast */
 			color: white;
 			padding: 14px 20px;
 			margin: 8px 0;
@@ -113,7 +113,8 @@
 		</section>
 		<section>
 			<h2>Input Example</h2>
-			<input class="input" type="text" placeholder="Enter text here">
+			<label for="input-example">Enter text here:</label> <!-- Add label for input -->
+			<input id="input-example" class="input" type="text">
 			<button class="button">Submit</button>
 		</section>
 	</main>
